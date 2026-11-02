@@ -19,9 +19,10 @@ app.use(session({
   saveUninitialized: false,
 }));
 app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/game', require('./routes/game'));
 
 // Rotas, sockets e serviços entram nas próximas issues:
-// app.use('/api/auth', require('./routes/auth'));      -> Integrante 3
 // require('./sockets')(io);                             -> Integrante 6
 // src/services/ia/                                      -> Integrantes 4 e 5
 
