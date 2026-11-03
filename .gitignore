@@ -1,4 +1,4 @@
-node_modules/
-.env
-uploads/
 database/*.sqlite
+.env
+node_modules/
+uploads/
