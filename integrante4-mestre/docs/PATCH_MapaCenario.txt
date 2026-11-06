@@ -1,0 +1,7 @@
+Em src/models/MapaCenario.js, adicionar ao define (junto de imagemPath):
+
+  dados: {
+    type: DataTypes.TEXT, allowNull: false, defaultValue: '{}',
+  },
+
+(mestre.js grava e lê como JSON string: {saidas:[ordens], npcs:[...], desafio:{...}|null})

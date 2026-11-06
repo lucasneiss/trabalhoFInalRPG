@@ -8,6 +8,7 @@ module.exports = sequelize.define('MapaCenario', {
   descricao: { type: DataTypes.TEXT, allowNull: false },
   promptImagem: { type: DataTypes.TEXT, field: 'prompt_imagem' },
   imagemPath: { type: DataTypes.TEXT, field: 'imagem_path' },
+  dados: { type: DataTypes.TEXT, allowNull: false, defaultValue: '{}' },
   visitado: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
   criadoEm: { type: DataTypes.DATE, defaultValue: DataTypes.NOW, field: 'criado_em' },
 }, { tableName: 'mapas_cenarios' });

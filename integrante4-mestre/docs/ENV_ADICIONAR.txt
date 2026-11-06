@@ -1,0 +1,5 @@
+
+# Texto / Mestre do Jogo
+TEXT_MODEL=gemini-2.5-flash
+TEXT_MAX_TENTATIVAS=3
+TEXT_MAX_ESPERA_MS=15000
