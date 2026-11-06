@@ -21,10 +21,11 @@ app.use(session({
 app.use(express.static(path.join(__dirname, '..', 'public')));
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/game', require('./routes/game'));
+app.use('/api/characters', require('./routes/personagens'));
+app.use('/api/maps', require('./routes/mapas'));
 
-// Rotas, sockets e serviços entram nas próximas issues:
+// Sockets entram na próxima issue:
 // require('./sockets')(io);                             -> Integrante 6
-// src/services/ia/                                      -> Integrantes 4 e 5
 
 app.get('/health', (req, res) => res.json({ ok: true }));
 
